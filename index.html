@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favourite writer</title>
+	<style>
+		#wrapper{
+			width: 400px;
+			margin: auto;
+			margin-top:  100px;
+			margin-bottom: 200px;
+		}
+		#result{
+
+			margin-top: 5em;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">	
+		<form name="form">
+		     <h3>Select your favourite writer:</h3>
+		     <select id="color" onchange=setwriter()>
+		     <option>Ivo Andric</option>
+		     <option>Anton Chekhov</option>
+		     <option>Isaak Bashevis Singer</option>
+		     <option>Orhan Pamuk</option>
+             </select>
+		 </form>
+		 
+		 <div id="result"> </div>
+
+<script type="text/javascript">
+	function setwriter()
+	{
+		var get_writer=document.getElementById("color").value;
+		document.getElementById("result").innerHTML=""+get_writer+" is your selected writer";
+	}
+
+</script>
+	</div>
+
+</body>
+
+</html> 
+
+
+
+
